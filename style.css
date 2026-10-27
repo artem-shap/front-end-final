@@ -1,0 +1,41 @@
+/* Small custom styles on top of Bootstrap */
+
+.anime-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.anime-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.anime-card img {
+  aspect-ratio: 2 / 3;      /* same poster shape for every card */
+  object-fit: cover;
+}
+
+.anime-card .card-title {
+  font-size: 0.95rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.6em;
+}
+
+.modal-poster {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.recommendation img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.recommendation small {
+  display: block;
+  margin-top: 4px;
+  line-height: 1.2;
+}
